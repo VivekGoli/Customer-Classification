@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Catergory</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="page.js"></script>
+	<link rel="stylesheet" href="page.css">
+</head>
+
+<body>
+    <div class="center">
+            <h1>Customer Classification</h1>
+            <form>
+                    <div class="inputbox">
+                            <input type="text" id="id" name="id" required="required">
+                            <span>Customer ID</span>
+                    </div>
+                    <div class="inputbox">
+                           <select class="options" id="Gender" name="gender">
+                            <option disabled selected value></option>
+                            <option value = "1">Male</option>
+                            <option value = "0">Female</option>
+                            </select>
+                            <span>Gender</span>
+                    </div>
+                    <div class="inputbox">
+                            <select class="options" id="Ever_Married" name="married">
+                            <option disabled selected value></option>
+                            <option value = "1">Yes</option>
+                            <option value = "0">No</option>
+                            </select>
+                            <span>Ever Married</span>
+                    </div>
+                    <div class="inputbox">
+                            <input type="number" step="any" name="age" id="Age" required="required">
+                            <span>Age</span>
+                    </div>
+                    <div class="inputbox">
+                            <select class="options" id="Graduated" name="graduated">
+                            <option disabled selected value></option>
+                            <option value = "1">Yes</option>
+                            <option value = "0">No</option>
+                            </select>
+                            <span>Graduated</span>
+                    </div>
+                    <div class="inputbox">
+                            <select class="options" id = "Profession" name = "profession">
+                            <option disabled selected value></option>
+                            <option value = "0">Artist</option>
+                            <option value = "1">Doctor</option>
+                            <option value = "2">Engineer</option>
+                            <option value = "3">Entertainment</option>
+                            <option value = "4">Executive</option>
+                            <option value = "5">Healthcare</option>
+                            <option value = "6">Homemaker</option>
+                            <option value = "7">Lawyer</option>
+                            <option value = "8">Marketing</option>
+                            </select>
+                            <span>Profession</span>
+                    </div>
+                    <div class="inputbox">
+                            <input type="number" step="any" name="Work_Experience" id="Work_Experience" required="required">
+                            <span>Work Experience</span>
+                    </div>
+                    <div class="inputbox">
+                            <select class="options" id = "Spending_Score" name = "Spending_Score">
+                            <option disabled selected value></option>
+                            <option value = "2">Low</option>
+                            <option value = "0">Average</option>
+                            <option value = "1">High</option>
+                            </select>
+                            <span>Spending Score</span>
+                    </div>
+                    <div class="inputbox">
+                            <input type="number" step="any" name="Family_Size" id="Family_Size" required="required">
+                            <span>Family Size</span>
+                    </div>
+                    <div class="inputbox">
+                            <select class="options" id = "Var_1" name = "var1">
+                            <option disabled selected value></option>
+                            <option value = "0">Grocery</option>
+                            <option value = "1">Books</option>
+                            <option value = "2">Clothes</option>
+                            <option value = "3">Accessories</option>
+                            <option value = "4">Personal care</option>
+                            <option value = "5">Appliances</option>
+                            <option value = "6">Gadgets</option>
+                            </select>
+                            <span>Shopping Category</span>
+                    </div> 
+                    <div class="inputbox">
+                            <input type="button" value="Predict" onclick="onClickPredict()">
+                    </div>
+                    <div id="prediction" class="inputbox"><h4></h4>
+                    </div>
+            </form>
+    </div>
+    </body>
+</html>
